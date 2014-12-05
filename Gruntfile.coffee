@@ -71,7 +71,7 @@ module.exports = (grunt) ->
           ext: '.html'
         ]
 
-    # slim definitions
+    # copy definitions
     copy:
       img:
         expand: true,
@@ -90,11 +90,11 @@ module.exports = (grunt) ->
         files:['src/slim/*.slim']
         tasks:['slim']
       coffee:
-       files: ['src/coffees/**/*.coffee']
-       tasks: ['concat', 'coffee', 'uglify']
+        files: ['src/coffees/**/*.coffee']
+        tasks: ['concat', 'coffee', 'uglify']
       sass:
-       files: ['src/sass/*.scss']
-       tasks: ['sass']
+        files: ['src/sass/*.scss']
+        tasks: ['sass']
 
       options:
         livereload: true
