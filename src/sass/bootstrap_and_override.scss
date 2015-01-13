@@ -1,6 +1,7 @@
 $navbar-logo-space: 15px;
 $navbar-height: 60px;
 $navbar-logo-fix: 10px;
+$navbar-default-brand-color: rgb(255, 77, 0);
 
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import "fix-space";
@@ -12,7 +13,7 @@ img.img-responsive {
   display: inline-block;
 }
 
-.navbar-header {
+.navbar {
   a {
     margin-right: $navbar-logo-space;
     img {
